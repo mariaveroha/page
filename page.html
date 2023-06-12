@@ -15,26 +15,26 @@
     <header>
         <div class="logo">LOGO</div>
         <div class="nav">
-            <a>КЕЙСЫ</a>
-            <a>УСЛУГИ</a>
-            <a>БЛОГ</a>
+            <a href="#cases">КЕЙСЫ</a>
+            <a href="#services">УСЛУГИ</a>
+            <a href="#blog">БЛОГ</a>
         </div>
-        <p class="phone">+7 999 999 99 99</p>
+        <a href="#" class="phone">+7 999 999 99 99</a>
         <div class="menu-btn">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        
+
     </header>
     <div class="menu">
         <nav>
-           <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Контакты</a></li>
-           </ul>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
         </nav>
     </div>
 
@@ -44,10 +44,10 @@
     <div class="banner">
         <div class="left">
             <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="button">
+            <a href="#" class="button">
                 <p class="claim">оставь заявку</p>
                 <button class="round"></button>
-            </div>
+            </a>
         </div>
         <div class="carousel-vertical">
             <div class="slider-item">
@@ -70,153 +70,209 @@
             </div>
 
         </div>
+
+
     </div>
 
     <!-- cases -->
 
-    <div class="block-button"><button class="button-standart button-case">Кейсы</button></div>
+    <a id="cases" href="#" class="block-button"><button class="button-standart button-case">Кейсы</button></a>
     <div class="slider1">
         <div class="slider-item">
-            <div class="case">
+            <div class="case" data-text="case1">
                 <img class="img-case" src="./images/case-1.png" />
                 <p class="case-name">кейс1</p>
             </div>
         </div>
         <div class="slider-item">
 
-            <div class="case">
+            <div class="case" data-text="case2">
                 <img class="img-case" src="./images/case-2.png" />
                 <p class="case-name">кейс2</p>
             </div>
         </div>
         <div class="slider-item">
-            <div class="case">
+            <div class="case" data-text="case3">
                 <img class="img-case" src="./images/case-3.png" />
                 <p class="case-name">кейс3</p>
             </div>
         </div>
         <div class="slider-item">
-            <div class="case">
-                <img class="img-case" src="./images/case-3.png" />
-                <p class="case-name">кейс3</p>
+            <div class="case" data-text="case4">
+                <img class="img-case" src="./images/case-1.png" />
+                <p class="case-name">кейс4</p>
             </div>
         </div>
-
+        <div class="slider-item">
+            <div class="case" data-text="case5">
+                <img class="img-case" src="./images/case-3.png" />
+                <p class="case-name">кейс5</p>
+            </div>
+        </div>
     </div>
+    <div class="arrows"></div>
 
     <!-- services -->
     <div class="services">
-        <div class="block-button"> <button class="button-standart button-service">Услуги</button></div>
+        <a id="services" href="#" class="block-button"> <button
+                class="button-standart button-service">Услуги</button></a>
         <div>
             <div class="slider">
                 <div class="slider-item">
-                    <div class="card">
+                    <div class="card" data-text="service1">
                         <p class="name-service">Услуга 1</p>
                         <p class="text-service">Proin sed ligula vitae enim mattis eleifend. Donec rhoncus odio
                             porta,
                             condimentum lectus vel, pretium enim.</p>
                         <div class="flex">
                             <p class="more">подробнее</p>
-                            <button class="round-service"></button>
+                            <button class="round-blog"></button>
                         </div>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="card">
+                    <div class="card" data-text="service2">
                         <p class="name-service">Услуга 2</p>
                         <p class="text-service">Proin sed ligula vitae enim mattis eleifend. Donec rhoncus odio
                             porta,
                             condimentum lectus vel, pretium enim.</p>
                         <div class="flex">
                             <p class="more">подробнее</p>
-                            <button class="round-service"></button>
+                            <button class="round-blog"></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="slider-item">
-                    <div class="card">
+                    <div class="card" data-text="service3">
                         <p class="name-service">Услуга 3</p>
                         <p class="text-service">Proin sed ligula vitae enim mattis eleifend. Donec rhoncus odio
                             porta,
                             condimentum lectus vel, pretium enim.</p>
                         <div class="flex">
                             <p class="more">подробнее</p>
-                            <button class="round-service"></button>
+                            <button class="round-blog"></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="slider-item">
-                    <div class="card">
+                    <div class="card" data-text="service4">
                         <p class="name-service">Услуга 4</p>
                         <p class="text-service">Proin sed ligula vitae enim mattis eleifend. Donec rhoncus odio
                             porta,
                             condimentum lectus vel, pretium enim.</p>
                         <div class="flex">
                             <p class="more">подробнее</p>
-                            <button class="round-service"></button>
+                            <button class="round-blog"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="card" data-text="service5">
+                        <p class="name-service">Услуга 5</p>
+                        <p class="text-service">Proin sed ligula vitae enim mattis eleifend. Donec rhoncus odio
+                            porta,
+                            condimentum lectus vel, pretium enim.</p>
+                        <div class="flex">
+                            <p class="more">подробнее</p>
+                            <button class="round-blog"></button>
                         </div>
                     </div>
                 </div>
 
             </div>
-
         </div>
+        <div class="arrowsservices"></div>
     </div>
 
 
     <!-- blog -->
 
     <div class="blog">
-        <div class="block-button"> <button class="button-standart button-blog">БЛОГ</button></div>
+        <a id="blog" href="#" class="block-button"> <button class="button-standart button-blog">БЛОГ</button></a>
         <div class="slider3">
             <div class="slider-item">
                 <div class="card-blog">
                     <img class="cover" src="./images/cover-blog.png" />
-                    <p class="name-blog">Lorem Ipsum</p>
-                    <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula vitae
-                        enim mattis eleifend.</p>
-                    <button class="round-blog"></button>
+                    <div class="info-blog">
+                        <p class="name-blog">Lorem Ipsum</p>
+                        <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula
+                            vitae
+                            enim mattis eleifend.</p>
+                    </div>
+                    <a href="#" class="read-more">
+                        <p class="more">Читать далее</p>
+                        <button class="round-blog"></button>
+                    </a>
+
                 </div>
             </div>
             <div class="slider-item">
                 <div class="card-blog">
                     <img class="cover" src="./images/cover-blog.png" />
-                    <p class="name-blog">Lorem Ipsum</p>
-                    <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula vitae
-                        enim mattis eleifend.</p>
-                    <button class="round-blog"></button>
+                    <div class="info-blog">
+                        <p class="name-blog">Lorem Ipsum</p>
+                        <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula
+                            vitae
+
+
+                            enim mattis eleifend.</p>
+                    </div>
+                    <a href="#" class="read-more">
+                        <p class="more">Читать далее</p>
+                        <button class="round-blog"></button>
+                    </a>
                 </div>
             </div>
             <div class="slider-item">
                 <div class="card-blog">
                     <img class="cover" src="./images/cover-blog.png" />
-                    <p class="name-blog">Lorem Ipsum</p>
-                    <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula vitae
-                        enim mattis eleifend.</p>
-                    <button class="round-blog"></button>
+                    <div class="info-blog">
+                        <p class="name-blog">Lorem Ipsum</p>
+                        <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula
+                            vitae
+                            enim mattis eleifend.</p>
+                    </div>
+                    <a href="#" class="read-more">
+                        <p class="more">Читать далее</p>
+                        <button class="round-blog"></button>
+                    </a>
                 </div>
             </div>
             <div class="slider-item">
                 <div class="card-blog">
                     <img class="cover" src="./images/cover-blog.png" />
-                    <p class="name-blog">Lorem Ipsum</p>
-                    <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula vitae
-                        enim mattis eleifend.</p>
-                    <button class="round-blog"></button>
+                    <div class="info-blog">
+                        <p class="name-blog">Lorem Ipsum</p>
+                        <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula
+                            vitae
+                            enim mattis eleifend.</p>
+                    </div>
+                    <a href="#" class="read-more">
+                        <p class="more">Читать далее</p>
+                        <button class="round-blog"></button>
+                    </a>
                 </div>
             </div>
             <div class="slider-item">
                 <div class="card-blog">
                     <img class="cover" src="./images/cover-blog.png" />
-                    <p class="name-blog">Lorem Ipsum</p>
-                    <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula vitae
-                        enim mattis eleifend.</p>
-                    <button class="round-blog"></button>
+                    <div class="info-blog">
+                        <p class="name-blog">Lorem Ipsum</p>
+                        <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula
+                            vitae
+                            enim mattis eleifend.</p>
+                    </div>
+
+                    <a href="#" class="read-more">
+                        <p class="more">Читать далее</p>
+                        <button class="round-blog"></button>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="arrowsBlog"></div>
     </div>
 
 
@@ -228,17 +284,17 @@
             <p class="footer-title">ОСТАВИТЬ ЗАЯВКУ</p>
             <div class="block-footer">
                 <img src="./images/phone.png" />
-                <span>+7 999 999 99 99</span>
+                <a href="#">+7 999 999 99 99</a>
             </div>
             <div class="block-footer block-bottom">
                 <img src="./images/email.png" />
-                <span>lorem@yandex.ru</span>
+                <a href="#">lorem@yandex.ru</a>
             </div>
             <div class="icons">
-                <img src="./images/inst.png" />
-                <img src="./images/telegram.png" />
-                <img src="./images/WhatsApp.png" />
-                <img src="./images/VK.png" />
+                <a href="#"> <img src="./images/inst.png" /></a>
+                <a href="#"> <img src="./images/telegram.png" /></a>
+                <a href="#"> <img src="./images/WhatsApp.png" /></a>
+                <a href="#"> <img src="./images/VK.png" /></a>
             </div>
         </div>
 
@@ -249,10 +305,10 @@
             <input placeholder="Имя" />
             <input placeholder="E-mail" />
             <input placeholder="Номер телефона" />
-            <div class="block-claim">
+            <a href="#" class="block-claim">
                 <span class="claim-footer">оставь заявку</span>
                 <button class="round-footer"></button>
-            </div>
+            </a>
         </div>
     </footer>
 
@@ -260,6 +316,7 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+           <p class="content"></p>
         </div>
 
     </div>

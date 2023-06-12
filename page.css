@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* header */
@@ -11,21 +19,24 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    height: 10vh;
 }
 
 .nav {
     display: flex;
     column-gap: 35px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 47px;
-    display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+}
+
+.nav a {
     color: #000000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 47px;
 }
 
 .logo,
@@ -38,7 +49,7 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4vw;
     line-height: 75px;
     display: flex;
     align-items: center;
@@ -51,7 +62,7 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 2.6vw;
     line-height: 42px;
     display: flex;
     align-items: center;
@@ -64,6 +75,8 @@ header {
 
 .banner {
     display: flex;
+    height: 85vh;
+    box-sizing: border-box;
 }
 
 .left {
@@ -75,12 +88,12 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 64px;
+    font-size: 4vw;
     line-height: 75px;
     text-transform: uppercase;
     color: #000000;
     max-width: 817px;
-    margin: 223px 50px 0 0;
+    margin: 20vh 50px 0 0;
 }
 
 .claim {
@@ -91,7 +104,7 @@ header {
     line-height: 38px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 156px;
+    margin-top: 10vh;
     cursor: pointer;
 }
 
@@ -107,7 +120,7 @@ header {
     border: none;
     cursor: pointer;
     position: relative;
-    margin-top: 120px;
+    margin-top: 30px;
     width: 53px;
     height: 53px;
 }
@@ -132,7 +145,15 @@ header {
     justify-content: center;
     align-items: center;
     margin: auto;
+
 }
+
+.carousel-vertical img {
+    height: 20vh;
+    width: 20vh;
+}
+
+
 
 /* cases */
 .cases {
@@ -164,8 +185,8 @@ header {
 }
 
 .img-case {
-    width: 30vw;
-    height: 34vw;
+    width: 20vw;
+    height: 24vw;
     cursor: pointer;
 }
 
@@ -203,15 +224,16 @@ header {
 .card {
     background: #FFFFFF;
     box-shadow: 16.0568px 16.0568px 12.3514px -2.47027px rgba(0, 0, 0, 0.25);
-    width: 26vw;
+    width: 20vw;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .name-service {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 29.6432px;
+    font-size: 25.6432px;
     line-height: 35px;
     text-align: center;
     text-transform: uppercase;
@@ -223,8 +245,8 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 24.7027px;
-    line-height: 29px;
+    font-size: 16.7027px;
+    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -244,8 +266,8 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 29.6432px;
-    line-height: 35px;
+    font-size: 25.6432px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #000000;
     cursor: pointer;
@@ -290,8 +312,7 @@ header {
 }
 
 .card-blog {
-    width: 25vw;
-    height: 595px;
+    width: 20vw;
     background-color: #FFFFFF;
     box-shadow: 15.4532px 15.4532px 11.8871px -2.37742px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -306,9 +327,9 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 34.2482px;
+    font-size: 30.2482px;
     line-height: 40px;
-    margin: 0 0 0 20px;
+    margin: 0;
     text-transform: uppercase;
     color: #000000;
 }
@@ -317,11 +338,24 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 30.7952px;
+    font-size: 26.7952px;
     line-height: 36px;
     text-transform: capitalize;
     color: #000000;
-    margin-left: 35px;
+}
+
+.info-blog,
+.read-more {
+    margin-left: 20px;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-right: 10px;
 }
 
 .round-blog {
@@ -333,9 +367,6 @@ header {
     width: 65px;
     height: 65px;
     margin-left: 20px;
-    position: absolute;
-    top: 520px;
-    left: 17vw;
 }
 
 
@@ -373,7 +404,7 @@ footer {
     width: 55px;
 }
 
-.block-footer span {
+.block-footer a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -446,6 +477,11 @@ input::placeholder {
     color: #000000;
 }
 
+input {
+    font-size: 36px;
+    padding-left: 20px;
+}
+
 .block-claim {
     display: flex;
     align-items: center;
@@ -495,7 +531,6 @@ input::placeholder {
 
 
 .modal {
-    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -504,9 +539,15 @@ input::placeholder {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
 }
 
-
+.modal.open  {
+    opacity: 1;
+    visibility: visible;
+}
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
@@ -544,6 +585,40 @@ input::placeholder {
     display: flex;
 }
 
+
+.arrows,
+.arrowsBlog,
+.arrowsservices {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.slick-arrow.slick-next {
+    background-image: url(./images/right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slick-arrow.slick-prev {
+    background-image: url(./images/left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
 /* menu */
 
 .menu-btn {
@@ -557,7 +632,7 @@ input::placeholder {
     }
 
     .slick-list {
-        margin-left: 3vw;
+        margin-left: 4vw;
     }
 
     footer {
@@ -569,7 +644,22 @@ input::placeholder {
     .right-column {
         max-width: 550px;
     }
+
+    .more {
+        font-size: 20px;
+    }
+
+    .round-blog {
+        width: 45px;
+        height: 45px;
+    }
+
+    .round-blog:after {
+        top: 15px;
+        left: 15px;
+    }
 }
+
 
 @media (max-width: 1250px) {
     .title {
@@ -578,23 +668,25 @@ input::placeholder {
 
 }
 
-@media (max-width: 1200px) {
-    .round-blog {
-        left: 15vw;
+@media (max-width: 1150px) {
+
+    .more {
+        font-size: 18px;
     }
+
+}
+
+@media (max-width: 1200px) {
 
     footer {
         column-gap: 10px;
     }
+
 }
 
 @media (max-width: 1076px) {
     .name-blog {
         font-size: 30px;
-    }
-
-    .more {
-        font-size: 25px;
     }
 
     .subtitle {
@@ -640,40 +732,23 @@ input::placeholder {
         margin-left: 0;
     }
 
-    .round-service,
-    .round-blog {
-        width: 50px;
-        height: 50px;
-    }
-
-    .round-service:after,
-    .round-blog:after {
-        top: 20px;
-        left: 18px;
-    }
-
-    .card {
-        width: 45vw;
-        height: 457px;
-    }
-
+    .card,
     .card-blog {
-        width: 45vw;
-        height: 595px;
+        width: 30vw;
     }
+
+
 
     .slick-list {
-        margin-left: 5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
 
     .img-case {
-        width: 45vw;
-        height: 55vw;
+        width: 30vw;
+        height: 35vw;
     }
 
-    .round-blog {
-        left: 30vw;
-    }
 }
 
 @media (max-width: 880px) {
@@ -682,7 +757,6 @@ input::placeholder {
     }
 
     .title {
-        font-size: 54px;
         max-width: 350px;
     }
 
@@ -695,6 +769,21 @@ input::placeholder {
 
     .claim-footer {
         font-size: 28px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .card,
+    .card-blog {
+        width: 45vw;
+    }
+
+    .img-case {
+        width: 45vw;
+        height: 55vw;
     }
 }
 
@@ -711,7 +800,8 @@ input::placeholder {
         font-size: 25px;
     }
 
-    .block-bottom span {
+    .block-bottom a,
+    .block-footer a {
         font-size: 30px;
     }
 
@@ -722,7 +812,12 @@ input::placeholder {
     .block-footer img {
         width: 50px;
     }
+
+    input {
+        padding-left: 10px;
+    }
 }
+
 
 
 
@@ -749,7 +844,77 @@ input::placeholder {
     }
 
     .carousel-vertical .slider-item img {
-        width: 103px;
+        width: 143px;
+    }
+
+    .footer-title {
+        font-size: 19.6279px;
+        line-height: 23px;
+        margin: 0 0 47px 0;
+    }
+
+    .block-footer img {
+        width: 15px;
+    }
+
+    .block-footer a {
+        font-size: 8.16352px;
+        line-height: 10px;
+    }
+
+    .icons img {
+        width: 17.66px;
+    }
+
+    .icons {
+        column-gap: 6px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 0;
+        margin: 0;
+        max-width: 200px;
+    }
+
+    input {
+        height: 17.86px;
+        margin-top: 25px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    input::placeholder {
+        font-size: 10.7954px;
+        line-height: 13px;
+    }
+
+    .claim-footer {
+        font-size: 11.1553px;
+        line-height: 13px;
+    }
+
+    .block-claim {
+        margin-top: 14px;
+    }
+
+    .round-footer {
+        width: 18.48px;
+        height: 18.48px;
+    }
+
+    .round-footer:after {
+        top: 5px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    footer {
+        padding: 60px 32px 20px 30px;
     }
 }
 
@@ -760,6 +925,14 @@ input::placeholder {
 
 
 @media (max-width: 550px) {
+
+    .slider .slick-list,
+    .slider1 .slick-list,
+    .slider3 .slick-list {
+        margin: auto;
+        max-width: 300px;
+    }
+
     .logo {
         font-size: 18.3775px;
         line-height: 22px;
@@ -777,10 +950,6 @@ input::placeholder {
         padding-top: 116px;
         padding-left: 29px;
         margin: 0;
-    }
-
-    .carousel-vertical .slider-item img {
-        width: 83px;
     }
 
     .left {
@@ -829,7 +998,7 @@ input::placeholder {
     }
 
     .img-case {
-        width: 150.76px;
+        width: 140.76px;
         height: 170.41px;
     }
 
@@ -858,30 +1027,12 @@ input::placeholder {
 
     .card {
         width: 142.86px;
-        height: 148px;
     }
 
     .more {
         font-size: 9.56958px;
         line-height: 11px;
         margin: 10px 0 0 0;
-    }
-
-    .round-service {
-        width: 21px;
-        height: 21px;
-        position: absolute;
-        left: 130px;
-        top: 5px;
-    }
-
-    .round-service:after {
-        top: 6px;
-        left: 6px;
-        width: 5px;
-        height: 5px;
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
     }
 
     .flex {
@@ -906,7 +1057,6 @@ input::placeholder {
 
     .card-blog {
         width: 144.3px;
-        height: 216.97px;
     }
 
     .name-blog {
@@ -922,8 +1072,7 @@ input::placeholder {
     .round-blog {
         width: 21px;
         height: 21px;
-        top: 195px;
-        left: 90px;
+        top: 4px;
     }
 
     .round-blog:after {
@@ -933,75 +1082,6 @@ input::placeholder {
         height: 7px;
         border-left: 2px solid black;
         border-bottom: 2px solid black;
-    }
-
-    .footer-title {
-        font-size: 19.6279px;
-        line-height: 23px;
-        margin: 0 0 47px 0;
-    }
-
-    .block-footer img {
-        width: 15px;
-    }
-
-    .block-footer span {
-        font-size: 8.16352px;
-        line-height: 10px;
-    }
-
-    .icons img {
-        width: 17.66px;
-    }
-
-    .icons {
-        column-gap: 6px;
-    }
-
-    .subtitle {
-        font-size: 11px;
-        line-height: 13px;
-        padding: 0;
-        margin: 0;
-        max-width: 200px;
-    }
-
-    input {
-        height: 17.86px;
-        margin-top: 25px;
-        width: 200px;
-    }
-
-    input::placeholder {
-        font-size: 10.7954px;
-        line-height: 13px;
-    }
-
-    .claim-footer {
-        font-size: 11.1553px;
-        line-height: 13px;
-    }
-
-    .block-claim {
-        margin-top: 14px;
-    }
-
-    .round-footer {
-        width: 18.48px;
-        height: 18.48px;
-    }
-
-    .round-footer:after {
-        top: 5px;
-        left: 5px;
-        width: 5px;
-        height: 5px;
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
-    }
-
-    footer {
-        padding: 60px 32px 20px 30px;
     }
 
     .menu-btn {
