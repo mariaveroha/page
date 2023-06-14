@@ -200,6 +200,7 @@ header {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.54);
     cursor: pointer;
+      width: 20vw;
 }
 
 /* services */
@@ -748,6 +749,9 @@ input {
         width: 30vw;
         height: 35vw;
     }
+    .case-name {
+        width: 30vw;
+    }
 
 }
 
@@ -784,6 +788,9 @@ input {
     .img-case {
         width: 45vw;
         height: 55vw;
+    }
+    .case-name {
+        width: 45vw;
     }
 }
 
@@ -1004,6 +1011,7 @@ input {
 
     .case-name {
         margin-bottom: 30px;
+        width: 140.76px;
     }
 
     .button-service {
